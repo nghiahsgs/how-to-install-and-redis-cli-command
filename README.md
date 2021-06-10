@@ -324,4 +324,52 @@ smove set_from set_dest value
 smove s2 s1 30
 ```
 
-### ORDERED SET
+### 6.ORDERED SET
+ORDER SET: uniqe value with sorted order
+
+#### add member to sorted set (score 10, value a...)
+```
+zadd s1 10 a 20 b 30 c 50 e 40 d
+```
+
+#### list all member of set => auto sort
+```
+zrange s1 0 -1
+```
+
+#### get length of set
+```
+zcard s1
+```
+
+#### count number element has score bwt min and max
+```
+zcount s1 min max
+```
+
+#### remove a member of set
+```
+zrem s1 value_element
+```
+
+#### get rank or index of element in set
+```
+zrank s1 "d"
+```
+
+#### get revert rank
+```
+zrevrank s1 "d"
+```
+
+#### get score of element in set
+```
+zscore s1 "a"
+```
+
+#### if add element with same socore, first in , higher rank
+
+#### filter set by score (min<=score<=max)
+```
+zrangebyscore s1 min max
+```
