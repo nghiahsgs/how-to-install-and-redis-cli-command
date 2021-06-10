@@ -2,7 +2,7 @@
 redis-cli comamnd 
 
 
-## 1: install redis
+## A: install redis
 
 windows
 ```
@@ -20,7 +20,7 @@ ufw allow 6379/tcp
 sudo systemctl status redis
 ```
 
-## 2: Commond command
+## B: Commond command
 init redis server
 ```
 redis-server
@@ -31,7 +31,7 @@ init redis server
 redis-cli
 ```
 
-### String
+### 1.String
 #### get and set name
 ```
 set name "nghia hsgs"
@@ -126,7 +126,7 @@ get name => "nghia hsgs"
 ```
 
 
-### Pubsub
+### 2.Pubsub
 ```
 subscribe channel_nghia
 publish channel_nghia "abc"
@@ -134,7 +134,7 @@ publish channel_nghia "abc"
 psubscribe channel*
 publish channel_nghia "abc"
 ```
-### Hash
+### 3.Hash
 giống kiểu object trong js
 ```json
 {
@@ -212,7 +212,7 @@ hlen user1
 hmget user1 name age
 ```
 
-### List
+### 4.List
 
 #### monitor all statement excuted
 redis-cli monitor
@@ -259,7 +259,7 @@ linsert L before _value new_element
 lrange L 0 -1
 ```
 
-### SET
+### 5.SET
 (set : collections of unique values)
 
 
