@@ -19,6 +19,17 @@ ufw allow 6379/tcp
 
 sudo systemctl status redis
 ```
+centos
+```
+sudo dnf install redis
+sudo systemctl status redis
+sudo systemctl start redis.service
+
+
+redis-cli ping
+sudo vi /etc/redis.conf
+bind 127.0.0.1
+```
 
 ## B: Commond command
 init redis server
