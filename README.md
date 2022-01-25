@@ -24,9 +24,11 @@ centos
 sudo dnf install redis
 sudo systemctl status redis
 sudo systemctl start redis.service
+```
 
 
 redis-cli ping
+```
 sudo vi /etc/redis.conf
 bind 127.0.0.1
 ```
