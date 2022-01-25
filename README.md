@@ -31,6 +31,17 @@ sudo vi /etc/redis.conf
 bind 127.0.0.1
 ```
 
+
+SET PASSWORD for REDIS SERVER
+```
+redis 127.0.0.1:6379> AUTH PASSWORD
+(error) ERR Client sent AUTH, but no password is set
+redis 127.0.0.1:6379> CONFIG SET requirepass "mypass"
+OK
+redis 127.0.0.1:6379> AUTH mypass
+Ok
+```
+
 ## B: Commond command
 init redis server
 ```
