@@ -44,6 +44,12 @@ redis 127.0.0.1:6379> AUTH mypass
 Ok
 ```
 
+SET PASSWORD for REDIS SERVER
+```
+sudo vi /etc/redis.conf
+# requirepass foobared
+```
+
 ## B: Commond command
 init redis server
 ```
