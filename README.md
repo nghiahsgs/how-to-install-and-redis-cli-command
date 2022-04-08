@@ -60,7 +60,6 @@ Sửa bind 127.0.0.1 thành bind 0.0.0.0
 #bind 127.0.0.1 ::1
 bind 0.0.0.0 ::1
 
-Sửa protected-mode yes thành protected-mode no
 ```
 sudo systemctl restart redis
  
