@@ -29,7 +29,7 @@ sudo systemctl start redis.service
 
 redis-cli ping
 ```
-sudo vi /etc/redis.conf
+sudo vi /etc/redis/redis.conf
 bind 127.0.0.1
 ```
 
